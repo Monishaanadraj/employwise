@@ -12,7 +12,7 @@ EmployWise is a **user management system** built using **React.js**. It allows a
 - **Frontend:** React.js, CSS Modules (Tailwind, Material UI)  
 - **State Management:** React Hooks  
 
-Use following email id and password to login
+## Use following email id and password to login
 - **Email Id : eve.holt@reqres.in**
 - **password : cityslicka**
 
