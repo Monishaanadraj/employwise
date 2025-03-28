@@ -16,7 +16,7 @@ const Users = () => {
         const token = localStorage.getItem("token");
 
         if (!token) {
-            navigate("/"); // Redirect to login if token is missing
+            navigate("/login"); // Redirect to login if token is missing
             return;
         }
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";  // Import the CSS module
 
 const Login = () => {
@@ -38,6 +38,7 @@ const Login = () => {
                         className={styles.inputField} />
                     
                     <button type="submit" className={styles.loginButton}>Login</button>
+                    <div className={styles.goback}><Link className={styles.goback} to="/">Go back to Home</Link></div>
                 </form>
             </div>
         </div>

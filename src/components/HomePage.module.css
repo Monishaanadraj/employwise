@@ -1,0 +1,67 @@
+/* Main Container */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    color: white;
+    text-align: center;
+    background: url("../../bg.png") center/cover no-repeat;
+}
+
+.homeContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+ }
+
+/* Content Section */
+.homeContent {
+    max-width: 600px;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Title Styling */
+.homeContent h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+/* Subtitle Styling */
+.homeContent p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.homeButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Buttons */
+.homeBtn {
+    background-color: #042950;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.homeBtn:hover {
+    background-color: #ffcc00;
+    color: black;
+}

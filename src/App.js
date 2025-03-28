@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
 import Login from "./components/Login";
 import Users from "./components/Users";
 import EditUser from "./components/EditUser";
@@ -10,7 +11,8 @@ function App() {
         <Router>
           <Navbar/>
             <Routes>
-                <Route path="/" element={<Login />} />
+            <Route path="/" element={<HomePage />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/users" element={<Users />} />
                 <Route path="/edit/:id" element={<EditUser />} />
             </Routes>
