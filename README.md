@@ -23,7 +23,7 @@ EmployWise is a **user management system** built using **React.js**. It allows a
 ## 📂 Project Setup  
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/yourusername/EmployWise.git
+git clone https://github.com/Monishaanadraj/employwise.git
 cd EmployWise
 ```
 ### 2️⃣ Install Dependencies  
