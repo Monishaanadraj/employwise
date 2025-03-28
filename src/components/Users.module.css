@@ -1,0 +1,172 @@
+/* Users.module.css */
+
+/* Container */
+.usersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.usersContainer h2{
+    color: goldenrod;
+    font-size: 35px;
+    
+}
+
+/* Users Grid */
+.usersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* User Card */
+.userCard {
+    background: #1e1e2f;
+    color: goldenrod;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.userCard:hover {
+    transform: scale(1.05);
+}
+
+/* Avatar */
+.userAvatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* User Name */
+.userName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* User Email */
+.userEmail {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.editButton, .deleteButton {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.editButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #0056b3;
+}
+
+.deleteButton {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #cc0000;
+}
+
+/* Pagination Buttons */
+.pagination {
+    margin-top: 30px;
+    display:flex;
+    gap: 20px;
+}
+
+.pageButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.pageButton:hover {
+    background-color: #0056b3;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.searchInput {
+    width: 70%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.searchButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .usersGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+    }
+}
